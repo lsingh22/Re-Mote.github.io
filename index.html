@@ -43,7 +43,7 @@ body {
   	<p>Luquant Singh, app development</p>
 
     <script type="text/javascript">
-    alert("\tWelcome to Re-Mote by Filippo Santoro.\n\tAfter the curtain drops, please select 1a on your re-mote.\n\tYour next options will then be 1b or 2a.\n\tEach selection may only be chosen once!")
+    alert("\t\t\t\t    Welcome to Re-Mote by Filippo Santoro.\n  \t\t\t  After the curtain drops, please select 1a on your re-mote.\n \t\t\t\t     Your next options will then be 1b or 2a.\n \tOnly make next selection when you have finished listening to the current segment.")
 
     
     var frames = Array( 
@@ -121,7 +121,7 @@ body {
   </head>
 
   <body>   
-      <iframe border="5px dotted pink" id="MyFrame" width="720" height="560" src="https://www.youtube.com/embed/Atn2AjXQqkI?autoplay=1&mute=1&modestbranding=0&showinfo=0&controls=0&rel=0" title="Welcome"></iframe>
+      <iframe border="5px dotted pink" id="MyFrame" width="640" height="360" src="https://www.youtube.com/embed/Atn2AjXQqkI?autoplay=1&mute=1&modestbranding=0&showinfo=0&controls=0&rel=0" title="Welcome"></iframe>
 
       <p>  </p>
 
@@ -129,22 +129,23 @@ body {
         document.getElementById("textout").innerHTML = vid_id;
       </script> 
 
-      <div class="btn-group1" style="width:420">
-  		  <button id="1a" style="width:15%" onClick=ChangeSrc(0);>1a</button>
-  		  <button id="1b" style="width:15%" onClick=ChangeSrc(1); disabled="true">1b</button>
-  		  <button id="1c" style="width:15%" onClick=ChangeSrc(2); disabled="true">1c</button>
-  		  <button id="1d" style="width:15%" onClick=ChangeSrc(3); disabled="true">1d</button>
-  		  <button id="1e" style="width:15%" onClick=ChangeSrc(4); disabled="true">1e</button>
+      <div class="btn-group1" style="width:360">
+  		  <button id="1a" style="width:5%" onClick=ChangeSrc(0);>1a</button>
+  		  <button id="1b" style="width:5%" onClick=ChangeSrc(1); disabled="true">1b</button>
+  		  <button id="1c" style="width:5%" onClick=ChangeSrc(2); disabled="true">1c</button>
+  		  <button id="1d" style="width:5%" onClick=ChangeSrc(3); disabled="true">1d</button>
+  		  <button id="1e" style="width:5%" onClick=ChangeSrc(4); disabled="true">1e</button>
 	    </div>
 
-	    <div class="btn-group2" style="width:420">
-  		  <button id="2a" style="width:15%" onClick=ChangeSrc(5); disabled="true">2a</button>
-  		  <button id="2b" style="width:15%" onClick=ChangeSrc(6); disabled="true">2b</button>
-  		  <button id="2c" style="width:15%" onClick=ChangeSrc(7); disabled="true">2c</button>
-  		  <button id="2d" style="width:15%" onClick=ChangeSrc(8); disabled="true">2d</button>
-  		  <button id="2e" style="width:15%" onClick=ChangeSrc(9); disabled="true">2e</button>
+	    <div class="btn-group2" style="width:360">
+  		  <button id="2a" style="width:5%" onClick=ChangeSrc(5); disabled="true">2a</button>
+  		  <button id="2b" style="width:5%" onClick=ChangeSrc(6); disabled="true">2b</button>
+  		  <button id="2c" style="width:5%" onClick=ChangeSrc(7); disabled="true">2c</button>
+  		  <button id="2d" style="width:5%" onClick=ChangeSrc(8); disabled="true">2d</button>
+  		  <button id="2e" style="width:5%" onClick=ChangeSrc(9); disabled="true">2e</button>
 	    </div>
-      <p font-style:italic> Made possible through the support of a Graduate Research Grant from the Honor Society of Phi Kappa Phi. </p>
+      <p></p>
+      <i> <small> Made possible through the support of a Graduate Research Grant from the Honor Society of Phi Kappa Phi. </small> </i>
 
   </body>
 </html>
