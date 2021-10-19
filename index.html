@@ -38,17 +38,17 @@ body {
 
 <head>
     <h1>Re-Mote for Bassoon and Applied Technology</h1>
-	  <p>by Filippo Santoro</p>
-   	<p>Midori Samson, bassoon</p>
-  	<p>Luquant Singh, app development</p>
+          <p>by Filippo Santoro</p>
+        <p>Midori Samson, bassoon</p>
+        <p>Luquant Singh, app development</p>
     <script type="text/javascript">
     alert("Welcome to Re-Mote by Filippo Santoro. Please find instructions below the video player. Enjoy!")
 
-    
-    var frames = Array( 
-    "https://youtube.com/embed/lmWL7dPXvcM?autoplay=1&mute=0&modestbranding=0&showinfo=0&controls=0&rel=0", 
-    "https://youtube.com/embed/R3c6VCAa9hA?autoplay=1&mute=0&modestbranding=0&showinfo=0&controls=0&rel=0", 
-    "https://youtube.com/embed/66tvi_Lx3hY?autoplay=1&mute=0&modestbranding=0&showinfo=0&controls=0&rel=0", 
+
+    var frames = Array(
+    "https://youtube.com/embed/lmWL7dPXvcM?autoplay=1&mute=0&modestbranding=0&showinfo=0&controls=0&rel=0",
+    "https://youtube.com/embed/R3c6VCAa9hA?autoplay=1&mute=0&modestbranding=0&showinfo=0&controls=0&rel=0",
+    "https://youtube.com/embed/66tvi_Lx3hY?autoplay=1&mute=0&modestbranding=0&showinfo=0&controls=0&rel=0",
     "https://youtube.com/embed/0hnqoQ4b5OY?autoplay=1&mute=0&modestbranding=0&showinfo=0&controls=0&rel=0",
     "https://youtube.com/embed/CKlY8eQ_Jzs?autoplay=1&mute=0&modestbranding=0&showinfo=0&controls=0&rel=0",
     "https://youtube.com/embed/thm47bRCb20?autoplay=1&mute=0&modestbranding=0&showinfo=0&controls=0&rel=0",
@@ -57,7 +57,7 @@ body {
     "https://youtube.com/embed/7AGNIRL3uPs?autoplay=1&mute=0&modestbranding=0&showinfo=0&controls=0&rel=0",
     "https://youtube.com/embed/EOnI4XY45uQ?autoplay=1&mute=0&modestbranding=0&showinfo=0&controls=0&rel=0",
     "https://youtube.com/embed/Uzxk_DySSeQ?autoplay=1&mute=0&modestbranding=0&showinfo=0&controls=0&rel=0",
-    "https://youtube.com/embed/prHdinEJKOE?autoplay=1&mute=0&modestbranding=0&showinfo=0&controls=0&rel=0", 
+    "https://youtube.com/embed/prHdinEJKOE?autoplay=1&mute=0&modestbranding=0&showinfo=0&controls=0&rel=0",
     "https://youtube.com/embed/1zFtDTH1u7o?autoplay=1&mute=0&modestbranding=0&showinfo=0&controls=0&rel=0",
     "https://youtube.com/embed/YcR0YVk-ZV4?autoplay=1&mute=0&modestbranding=0&showinfo=0&controls=0&rel=0",
     "https://youtube.com/embed/GFVmxdgmL0c?autoplay=1&mute=0&modestbranding=0&showinfo=0&controls=0&rel=0",
@@ -70,13 +70,13 @@ body {
     var videoId = Array("1A", "1B", "1C", "1D", "1E", "2A", "2B", "2C", "2D", "2E");
     var canPlay1 = new Array(5);
     var canPlay2 = new Array(5);
-    var choices = new Array(10);    
-    var choice_string = "1A ";                 
-    var duration = Array(48, 69, 45, 60, 47, 65, 53, 32, 69, 71);                 
+    var choices = new Array(10);
+    var choice_string = "1A ";
+    var duration = Array(48, 69, 45, 60, 47, 65, 53, 32, 69, 71);
     var i = 0;
     var len = frames.length;
     var vidId = 0;
-    
+
     function ChangeSrc(srcId) {
       document.getElementById("MyFrame").src = frames[srcId];
       switch(srcId) {
@@ -87,112 +87,113 @@ body {
           document.getElementById("3a").disabled = false;
           document.getElementById("4a").disabled = false;
           break;
-        case 1: 
-          document.getElementById("1b").disabled = true; 
-          document.getElementById("1c").disabled = false; 
+        case 1:
+          document.getElementById("1b").disabled = true;
+          document.getElementById("1c").disabled = false;
           break;
-        case 2:           
-          document.getElementById("1c").disabled = true; 
-          document.getElementById("1d").disabled = false; 
+        case 2:
+          document.getElementById("1c").disabled = true;
+          document.getElementById("1d").disabled = false;
           break;
-        case 3: 
-          document.getElementById("1d").disabled = true; 
-          document.getElementById("1e").disabled = false; 
+        case 3:
+          document.getElementById("1d").disabled = true;
+          document.getElementById("1e").disabled = false;
           break;
-        case 4: 
-          document.getElementById("1e").disabled = true; 
+        case 4:
+          document.getElementById("1e").disabled = true;
         break;
-        case 5: 
-          document.getElementById("2a").disabled = true; 
-          document.getElementById("2b").disabled = false; 
+        case 5:
+          document.getElementById("2a").disabled = true;
+          document.getElementById("2b").disabled = false;
         break;
-        case 6: 
-          document.getElementById("2b").disabled = true; 
-          document.getElementById("2c").disabled = false; 
+        case 6:
+          document.getElementById("2b").disabled = true;
+          document.getElementById("2c").disabled = false;
         break;
-        case 7: 
-          document.getElementById("2c").disabled = true; 
-          document.getElementById("2d").disabled = false; 
+        case 7:
+          document.getElementById("2c").disabled = true;
+          document.getElementById("2d").disabled = false;
         break;
-        case 8: 
-          document.getElementById("2d").disabled = true; 
-          document.getElementById("2e").disabled = false; 
+        case 8:
+          document.getElementById("2d").disabled = true;
+          document.getElementById("2e").disabled = false;
         break;
-        case 9: 
-          document.getElementById("2e").disabled = true; 
+        case 9:
+          document.getElementById("2e").disabled = true;
         break;
-        case 10: 
-          document.getElementById("3a").disabled = true; 
-          document.getElementById("3b").disabled = false; 
+        case 10:
+          document.getElementById("3a").disabled = true;
+          document.getElementById("3b").disabled = false;
         break;
-        case 11: 
-          document.getElementById("3b").disabled = true; 
-          document.getElementById("3c").disabled = false; 
+        case 11:
+          document.getElementById("3b").disabled = true;
+          document.getElementById("3c").disabled = false;
         break;
-        case 12: 
-          document.getElementById("3c").disabled = true; 
-          document.getElementById("3d").disabled = false; 
+        case 12:
+          document.getElementById("3c").disabled = true;
+          document.getElementById("3d").disabled = false;
         break;
-        case 13: 
-          document.getElementById("3d").disabled = true; 
-          document.getElementById("3e").disabled = false; 
+        case 13:
+          document.getElementById("3d").disabled = true;
+          document.getElementById("3e").disabled = false;
         break;
-        case 14: 
-          document.getElementById("3e").disabled = true; 
+        case 14:
+          document.getElementById("3e").disabled = true;
         break;
-        case 15: 
-          document.getElementById("4a").disabled = true; 
-          document.getElementById("4b").disabled = false; 
+        case 15:
+          document.getElementById("4a").disabled = true;
+          document.getElementById("4b").disabled = false;
         break;
-        case 16: 
-          document.getElementById("4b").disabled = true; 
-          document.getElementById("4c").disabled = false; 
+        case 16:
+          document.getElementById("4b").disabled = true;
+          document.getElementById("4c").disabled = false;
         break;
-        case 17: 
-          document.getElementById("4c").disabled = true; 
-          document.getElementById("4d").disabled = false; 
+        case 17:
+          document.getElementById("4c").disabled = true;
+          document.getElementById("4d").disabled = false;
         break;
-        case 18: 
-          document.getElementById("4d").disabled = true; 
-          document.getElementById("4e").disabled = false; 
+        case 18:
+          document.getElementById("4d").disabled = true;
+          document.getElementById("4e").disabled = false;
         break;
-        case 19: 
-          document.getElementById("4e").disabled = true; 
+        case 19:
+          document.getElementById("4e").disabled = true;
         break;
       }
     }
 
-    </script>		
-    
+    </script>
+
     <style type="text/css">
       select {clear:both;}
     </style>
   </head>
 
-  <body>   
-      <iframe border="5px dotted pink" id="MyFrame" width="640" height="360" src="https://www.youtube.com/embed/Atn2AjXQqkI?autoplay=1&mute=1&modestbranding=0&showinfo=0&controls=0&rel=0" title="Welcome"></iframe>
+  <body>
+      <iframe border="5px dotted pink" id="MyFrame" width="640" height="360" src="https://www.youtube.com/embed/1--jZzL9k-M?autoplay=1&mute=0&modestbranding=0&showinfo=0&controls=0&rel=0" title="Welcome"></iframe>
 
       <p>  </p>
 
       <script>
         document.getElementById("textout").innerHTML = vid_id;
-      </script> 
+      </script>
 
-      <div class="btn-group1" style="width:360">
-  		  <button id="1a" style="width:5%" onClick=ChangeSrc(0);>1a</button>
-  		  <button id="1b" style="width:5%" onClick=ChangeSrc(1); disabled="true">1b</button>
-  		  <button id="1c" style="width:5%" onClick=ChangeSrc(2); disabled="true">1c</button>
-  		  <button id="1d" style="width:5%" onClick=ChangeSrc(3); disabled="true">1d</button>
-  		  <button id="1e" style="width:5%" onClick=ChangeSrc(4); disabled="true">1e</button>
-	    </div>
+      <div class="btn-group1" style="width:360">                  
 
-	    <div class="btn-group2" style="width:360">
-  		  <button id="2a" style="width:5%" onClick=ChangeSrc(5); disabled="true">2a</button>
-  		  <button id="2b" style="width:5%" onClick=ChangeSrc(6); disabled="true">2b</button>
-  		  <button id="2c" style="width:5%" onClick=ChangeSrc(7); disabled="true">2c</button>
-  		  <button id="2d" style="width:5%" onClick=ChangeSrc(8); disabled="true">2d</button>
-  		  <button id="2e" style="width:5%" onClick=ChangeSrc(9); disabled="true">2e</button>
-	    </div>
+<button id="1a" style="width:5%" onClick=ChangeSrc(0);>1a</button>
+                  <button id="1b" style="width:5%" onClick=ChangeSrc(1); disabled="true">1b</button>
+                  <button id="1c" style="width:5%" onClick=ChangeSrc(2); disabled="true">1c</button>
+                  <button id="1d" style="width:5%" onClick=ChangeSrc(3); disabled="true">1d</button>
+                  <button id="1e" style="width:5%" onClick=ChangeSrc(4); disabled="true">1e</button>
+            </div>
+
+            <div class="btn-group2" style="width:360">
+                  <button id="2a" style="width:5%" onClick=ChangeSrc(5); disabled="true">2a</button>
+                  <button id="2b" style="width:5%" onClick=ChangeSrc(6); disabled="true">2b</button>
+                  <button id="2c" style="width:5%" onClick=ChangeSrc(7); disabled="true">2c</button>
+                  <button id="2d" style="width:5%" onClick=ChangeSrc(8); disabled="true">2d</button>
+                  <button id="2e" style="width:5%" onClick=ChangeSrc(9); disabled="true">2e</button>
+            </div>
 
       <div class="btn-group3" style="width:360">
         <button id="3a" style="width:5%" onClick=ChangeSrc(10); disabled="true">3a</button>
@@ -210,14 +211,17 @@ body {
         <button id="4e" style="width:5%" onClick=ChangeSrc(19); disabled="true">4e</button>
       </div>
       <p></p>
-   
+
       <bold>Instructions:</bold>
       <small>
-      <p> After the curtain drops, please select 1a on your re-mote. When video 1a ends, make your next selection (1b or 2a).</p>
-      <p> Only make next selection when you have finished listening to the current segment. Feel free to refresh the page to start the performance over! </p>
+      <p> Click 1a on your remote to begin composing. When video 1a ends, make your next selection (1b, 2a, 3a, or 4a). Then, continue making selections until you've heard all twenty short segments of music. In total, Re-Mote takes about 20 minutes to experience.</p>
       </small>
       <p></p>
       <i> <small> Made possible through the support of a Graduate Research Grant from the Honor Society of Phi Kappa Phi. </small> </i>
 
   </body>
 </html>
+
+
+
+
